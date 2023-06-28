@@ -1,5 +1,5 @@
 {
-    "title": "Citrix Receiver/Workspace modifiers to remap mac to win so that PowerTools can unmap them... (ctrl, option, cmd) -> (ctrl, win, alt) -> (ctrl, atl, ctrl)",
+    "title": "Citrix Remap Mac to Win (ctrl, option, cmd) -> (ctrl, win, alt) -> (ctrl, atl, ctrl)",
     "rules": [
         {
             "description": "In Citrix, add fn modifier to Tab so it is forwarded",
@@ -7,11 +7,17 @@
                 {
                     "from": {
                         "key_code": "tab",
-                        "modifiers": { "optional": [ "any" ] }
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
                     },
                     "to": {
                         "key_code": "tab",
-                        "modifiers": [ "fn" ]
+                        "modifiers": [
+                            "fn"
+                        ]
                     },
                     "type": "basic",
                     "conditions": [
@@ -25,16 +31,21 @@
                     ]
                 }
             ]
-        }, {
+        },
+        {
             "description": "In Citrix, change left_option to Windows key via \"⌘⌥ Command (right)\"",
             "manipulators": [
                 {
                     "from": {
                         "key_code": "left_option",
-                        "modifiers": { "optional": [ "any" ] }
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
                     },
                     "to": {
-                        "key_code": "right_command",
+                        "key_code": "right_command"
                     },
                     "type": "basic",
                     "conditions": [
