@@ -66,16 +66,11 @@
                 {
                     "from": {
                         "key_code": "delete_or_backspace",
-                        "modifiers": {
-                            "optional": [
-                                "any"
-                            ]
-                        }
                     },
                     "to": {
                         "key_code": "delete_or_backspace",
                         "modifiers": [
-                            "left_option"
+                            "left_shift"
                         ]
                     },
                     "type": "basic",
